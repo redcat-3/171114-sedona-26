@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Зоя Педонова](https://up.htmlacademy.ru/adaptive/26/user/171114).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
