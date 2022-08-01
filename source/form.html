@@ -41,9 +41,9 @@
     </header>
     <main class="form-container">
       <h1 class="visually-hidden">Sedona</h1>
+      <img class="header-image" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+      <h2 class="visually-hidden">Ваше мнение очень важно для нас</h2>
       <section class="form-slogan">
-        <h2 class="visually-hidden">Ваше мнение очень важно для нас</h2>
-        <img class="form-slogan__image" src="img/sedona.svg" width="229" height="39" alt="Sedona">
         <h3 class="form-slogan__title">Оставьте свой отзыв</h3>
         <p class="form-slogan__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -127,5 +127,18 @@
         </div>
       </div>
     </footer>
+    <div class="overlay"></div>
+    <!-- Модальное окно Формы обратной связи (добавление) -->
+    <article class="form form-add">
+      <h3 class="form__title">Ваш отзыв отправлен!</h3>
+      <p class="form-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="form-button" type="button" aria-label="Закрыть окно"></button>
+    </article>
+    <!-- Модальное окно Формы обратной связи (неудача) -->
+    <article class="form form-failure">
+      <h3 class="form__title">Что-то пошло не так!</h3>
+      <p class="form-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="form-button" type="button" aria-label="ОК"></button>
+    </article>
   </body>
 </html>
