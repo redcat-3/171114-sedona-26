@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
@@ -6,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <a class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
       <nav class="header-nav">
@@ -16,22 +17,22 @@
         <div class="header-nav__wrapper">
           <ul class="header-nav__list">
             <li class="header-nav__item header-nav__item--active">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -49,22 +50,26 @@
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </section>
-      <section class="form form__wrapper">
+      <section class="form form-wrapper">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="feedback-form__group">
             <legend class="feedback-form__title">Представьтесь</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label for="feedback-form-name">Имя:</label>
-                <input id="feedback-form-name" type="text" name="name" placeholder="Петр">
+                <label class="text">Имя:
+                  <input class="text__input" type="text" name="name" placeholder="Петр">
+                </label>
               </li>
               <li class="feedback-form__item">
-                <label for="feedback-form-surname">Фамилия:</label>
-                <input id="feedback-form-surname" type="text" name="surname" placeholder="Пустота">
+                <label class="text">Фамилия:
+                  <input class="text__input" type="text" name="surname" placeholder="Пустота">
+                </label>
               </li>
               <li class="feedback-form__item">
-                <label for="feedback-form-patronymic">Отчество:</label>
-                <input id="feedback-form-patronymic" type="text" name="patronymic" placeholder="Викторович">
+                <label class="text">Отчество:
+                  <input class="text__input" id="feedback-form-patronymic" type="text" name="patronymic" placeholder="Викторович">
+                </label>
               </li>
             </ul>
           </fieldset>

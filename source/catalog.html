@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
@@ -6,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <a class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
       <nav class="header-nav">
@@ -16,22 +17,22 @@
         <div class="header-nav__wrapper">
           <ul class="header-nav__list">
             <li class="header-nav__item header-nav__item--active">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="header-nav__item">
-              <a>
+              <a href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -51,41 +52,37 @@
         </p>
         <div class="gallery-wrapper">
           <ul class="gallery__list">
-            <li class="gallery__item">
-              <figure class="card">
+            <li class="gallery__item card">
+              <figure>
                 <img class="card__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
                 <figcaption class="card__caption">Неродные просторы</figcaption>
-                <span class="card__author">Автор фото: Борис</span>
-                <button class="card__likes card__likes--like" type="button"></button>
-                <span class="likes-number">1350</span>
               </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="card">
-                <img class="card__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
-                <figcaption class="card__caption">Местная растительность</figcaption>
-                <span class="card__author">Автор фото: Сергей</span>
-                <button class="card__likes" type="button"></button>
-                <span class="likes-number">143</span>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="card">
-                <img class="card__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
-                <figcaption class="card__caption">Дорога на север</figcaption>
-                <span class="card__author">Автор фото: Петр</span>
-                <button class="card__likes" type="button"></button>
-                <span class="likes-number">96</span>
-              </figure>
+              <p class="card__author">Автор фото: Борис</p>
+              <button class="card__likes card__likes--like" type="button">1350</button>
             </li>
             <li class="gallery__item card">
-              <figure class="card">
+              <figure>
+                <img class="card__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+                <figcaption class="card__caption">Местная растительность</figcaption>
+              </figure>
+              <p class="card__author">Автор фото: Сергей</p>
+              <button class="card__likes" type="button">143</button>
+            </li>
+            <li class="gallery__item card">
+              <figure>
+                <img class="card__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+                <figcaption class="card__caption">Дорога на север</figcaption>
+              </figure>
+              <p class="card__author">Автор фото: Петр</p>
+              <button class="card__likes" type="button">96</button>
+            </li>
+            <li class="gallery__item card">
+              <figure>
                 <img class="card__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="Мост дьявола">
                 <figcaption class="card__caption">Мост дьявола</figcaption>
-                <span class="card__author">Автор фото: Антон</span>
-                <button class="card__likes" type="button"></button>
-                <span class="likes-number">254</span>
               </figure>
+              <p class="card__author">Автор фото: Антон</p>
+              <button class="card__likes" type="button">254</button>
             </li>
           </ul>
         </div>
@@ -100,7 +97,7 @@
           <source src="uxtesting.ogv" type="video/ogg">
           <source src="uxtesting.webm" type="video/webm">
         </video>
-        <button class="video__button" type="button"></button>
+        <button class="video-button" type="button"></button>
       </section>
     </main>
     <footer class="page__footer footer">
