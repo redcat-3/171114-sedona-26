@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <a class="header-logo">
+      <a class="header__logo">
         <img src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
       <nav class="header-nav">
@@ -16,7 +17,7 @@
         </button>
         <div class="header-nav__wrapper">
           <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__item--active">
+            <li class="header-nav__item header-nav__item--current">
               <a href="index.html">
                 Главная
               </a>
@@ -42,12 +43,14 @@
     </header>
     <main class="page-main main-container">
       <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-      <section class="hero hero-index">
-        <img class="hero-index__image" src="img/text-index.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-        <h3 class="hero-index__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p class="hero-index__description">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
+      <section class="hero">
+        <img class="hero__image--index" src="img/text-index.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        <article class="hero__slogan">
+          <h3 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="hero__description">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </article>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -120,10 +123,12 @@
         <p class="contact-form__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="contact-form__button" href="#">Найти гостиницу</a>
+        <a class="contact-form__button" href="#">
+          Найти гостиницу
+        </a>
         <a class="contact-form__map"  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858715770477!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571258948551!5m2!1sru!2sru">
-					<img src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
-				</a>
+          <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+        </a>
       </section>
     </main>
     <footer class="page__footer footer">
