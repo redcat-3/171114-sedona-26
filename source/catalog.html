@@ -51,7 +51,7 @@
         <p class="gallery__description">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
-        <div class="gallery-wrapper">
+        <div class="gallery__wrapper">
           <ul class="gallery__list">
             <li class="gallery__item card">
               <figure>
@@ -59,7 +59,10 @@
                 <figcaption class="card__caption">Неродные просторы</figcaption>
               </figure>
               <p class="card__author">Автор фото: Борис</p>
-              <button class="card__likes card__likes--like" type="button">1350</button>
+              <div class="card__likes-wrapper">
+                <button class="card__likes card__likes--like" type="button"></button>
+                <label class="card__likes-number">1350</label>
+              </div>
             </li>
             <li class="gallery__item card">
               <figure>
@@ -67,7 +70,10 @@
                 <figcaption class="card__caption">Местная растительность</figcaption>
               </figure>
               <p class="card__author">Автор фото: Сергей</p>
-              <button class="card__likes" type="button">143</button>
+              <div class="card__likes-wrapper">
+                <button class="card__likes" type="button"></button>
+                <label class="card__likes-number">143</label>
+              </div>
             </li>
             <li class="gallery__item card">
               <figure>
@@ -75,7 +81,10 @@
                 <figcaption class="card__caption">Дорога на север</figcaption>
               </figure>
               <p class="card__author">Автор фото: Петр</p>
-              <button class="card__likes" type="button">96</button>
+              <div class="card__likes-wrapper">
+                <button class="card__likes" type="button"></button>
+                <label class="card__likes-number">96</label>
+              </div>
             </li>
             <li class="gallery__item card">
               <figure>
@@ -83,7 +92,10 @@
                 <figcaption class="card__caption">Мост дьявола</figcaption>
               </figure>
               <p class="card__author">Автор фото: Антон</p>
-              <button class="card__likes" type="button">254</button>
+              <div class="card__likes-wrapper">
+                <button class="card__likes" type="button"></button>
+                <label class="card__likes-number">254</label>
+              </div>
             </li>
           </ul>
         </div>
@@ -93,12 +105,14 @@
         <p class="presentation__description">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <video class="video" poster="img/video-mobile.jpg" width="280" height="177">
-          <source src="uxtesting.mp4" type="video/mp4">
-          <source src="uxtesting.ogv" type="video/ogg">
-          <source src="uxtesting.webm" type="video/webm">
-        </video>
-        <button class="video-button" type="button"></button>
+        <article class="video" >
+          <video poster="img/video-mobile.jpg" width="280" height="177">
+            <source src="uxtesting.mp4" type="video/mp4">
+            <source src="uxtesting.ogv" type="video/ogg">
+            <source src="uxtesting.webm" type="video/webm">
+          </video>
+          <button class="video__button" type="button"></button>
+        </article>
       </section>
     </main>
     <footer class="page__footer footer">
