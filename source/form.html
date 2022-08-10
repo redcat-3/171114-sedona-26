@@ -103,21 +103,21 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="radio">
-                  <input class="radio__input" type="radio" name="positive" value="1" checked>
+                  <input class="radio__input" type="radio" name="impress" value="+" checked>
                   <span class="radio__icon"></span>
                   <span class="radio__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="radio">
-                  <input class="radio__input" type="radio" name="negative">
+                  <input class="radio__input" type="radio" name="impress" value="-">
                   <span class="radio__icon"></span>
                   <span class="radio__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="radio">
-                  <input class="radio__input" type="radio" name="neutral">
+                  <input class="radio__input" type="radio" name="impress" value="0">
                   <span class="radio__icon"></span>
                   <span class="radio__label">Затрудняюсь ответить</span>
                 </label>
@@ -160,20 +160,18 @@
           <fieldset class="feedback-form__group">
             <p class="feedback-form__title">Опишите свои эмоции:</p>
             <ul class="feedback-form__list">
-              <li class="feedback-form__item form-text">
-                <label class="visually-hidden form-text__label">
-                  Текст отзыва
-                  <textarea class="form-text__textarea" rows="5" cols="45" name="text">
-                    Опишите подробно все свои восторги
-                  </textarea>
-                </label>
+              <li class="feedback-form__item">
+                <textarea class="textarea" name="textarea" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги" autofocus>
+                </textarea>
               </li>
             </ul>
           </fieldset>
-          <button class="feedback-form__submit" type="submit">Отправить отзыв</button>
-          <p class="feedback-form__footnote">
-            * — обязательные поля
-          </p>
+          <div class="feedback-form__submit">
+            <button class="feedback-form__submit--button" type="submit">Отправить отзыв</button>
+            <p class="feedback-form__footnote">
+              * — обязательные поля
+            </p>
+          </div>
         </form>
       </section>
     </main>
@@ -208,15 +206,17 @@
     <div class="overlay"></div>
     <!-- Модальное окно Формы обратной связи (добавление) -->
     <article class="popup popup-add">
-      <h3 class="popup__title">Ваш отзыв отправлен!</h3>
-      <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="popup-add__button" type="button" aria-label="Закрыть окно"></button>
+      <div class="popup__wrapper">
+        <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+        <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <button class="popup-add__button" type="button" aria-label="Закрыть окно">Закрыть окно</button>
     </article>
     <!-- Модальное окно Формы обратной связи (неудача) -->
     <article class="popup popup-failure">
       <h3 class="popup__title">Что-то пошло не так!</h3>
       <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-failure__button" type="button" aria-label="ОК"></button>
+      <button class="popup-failure__button" type="button" aria-label="ОК">OK</button>
     </article>
   </body>
 </html>

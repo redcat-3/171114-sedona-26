@@ -27,13 +27,50 @@
 }
 
 .feedback-form__list {
+  width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .feedback-form__item {
   position: relative;
   padding: 0 20px;
   margin: 0;
+}
+
+.feedback-form__submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__submit--button {
+  width: 280px;
+  min-height: 58px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  padding-top: 5px;
+  border: none;
+  background: #81b3d2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.feedback-form__footnote {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #bababa;
+  text-transform: uppercase;
+  align-self: flex-end;
 }
