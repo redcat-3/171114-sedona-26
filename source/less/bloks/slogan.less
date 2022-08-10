@@ -1,0 +1,55 @@
+.slogan {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.slogan__title {
+  &--index {
+    padding-bottom: 20px;
+  }
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.slogan__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 5px;
+}
+
+.slogan__description--index {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -43px;
+    left: -25px;
+    z-index: 30;
+    width: 320px;
+    height: 37px;
+    mix-blend-mode: normal;
+    background-image: url("../img/group4.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  position: relative;
+  display: block;
+  height: 100%;
+  padding-bottom: 10px;
+}
