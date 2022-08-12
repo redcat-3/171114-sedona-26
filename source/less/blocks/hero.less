@@ -1,13 +1,15 @@
 .hero {
   &--index {
-    background-position-y: 331px, top;
+    background-position-y: bottom, 100%;
   }
   min-height: 158px;
   background-color: #ddebf4;
-  background-image: url("data:image/svg+xml,%3Csvg width='320' height='57' viewBox='0 0 320 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_885' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='320' height='57'%3E%3Crect width='320' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_885)'%3E%3Cpath d='M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z' fill='white'/%3E%3Cpath d='M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E "),
-    url("../img/back-mobile.jpg.jpg");
+  background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
+    url("../img/back-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position-y: 101px, bottom;
+  background-size: cover, cover;
+  background-position-x: 50%, center;
+  background-position-y: bottom, 100%;
 }
 
 .hero__image {
@@ -19,3 +21,13 @@
   margin-left: calc(50% - 115px);
   margin-top: 60px;
 }
+
+/*
+@media (min-width: @tablet-width) {
+  .hero {
+    background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
+      url("../img/back-decktop.jpg");
+    min-height: 158px;
+  }
+}
+*/
