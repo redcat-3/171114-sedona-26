@@ -1,15 +1,27 @@
 .feedback-form {
   display: grid;
-  width: 320px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .feedback-form__group {
-  width: 320px;
+  width: 100%;
   border: none;
   margin: 0;
   padding: 0;
   padding-bottom: 19px;
   border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form__group--wide {
+
+  }
 }
 
 .feedback-form__title {
@@ -36,7 +48,6 @@
 
 .feedback-form__item {
   position: relative;
-  padding: 0 20px;
   margin: 0;
 }
 
