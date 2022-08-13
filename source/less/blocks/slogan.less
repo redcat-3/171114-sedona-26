@@ -1,4 +1,5 @@
 .slogan {
+  width: 100%;
   padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
@@ -22,10 +23,9 @@
 }
 
 .slogan__description {
+  width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
@@ -38,18 +38,24 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -43px;
-    left: -25px;
+    bottom: -62px;
+    left: calc(50% - 384px);
     z-index: 30;
-    width: 320px;
     height: 37px;
-    mix-blend-mode: normal;
-    background-image: url("../img/group4.jpg");
+    width: 768px;
+    background-image: url("data:image/svg+xml,%3Csvg width='768' height='37' viewBox='0 0 768 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H384V37L0 0Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M768 0H384V37L768 0Z' fill='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
-    background-position: 0 0;
   }
   position: relative;
   display: block;
   height: 100%;
   padding-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan__description--index {
+    &::after {
+      display: none;
+    }
+  }
 }

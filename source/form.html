@@ -3,6 +3,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,7 +15,7 @@
         </button>
         <div class="header-nav__wrapper">
           <ul class="header-nav__list">
-            <li class="header-nav__item">
+            <li class="header-nav__item header-nav__item--current">
               <a href="index.html">
                 Главная
               </a>
@@ -24,6 +25,8 @@
                 Фото и видео
               </a>
             </li>
+          </ul>
+          <ul class="header-nav__list">
             <li class="header-nav__item">
               <a href="form.html">
                 Форма отзыва
@@ -50,7 +53,7 @@
         <h2 class="visually-hidden">Ваше мнение очень важно для нас</h2>
         <h3 class="slogan__title">Оставьте свой отзыв</h3>
         <p class="slogan__description">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,<br/>а также о посещенных вами достопримечательностях
         </p>
       </article>
       <section class="form">
@@ -62,13 +65,13 @@
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Имя*:</span>
-                  <input class="text__input" type="text" name="name" placeholder="Петр">
+                  <input class="text__input" type="text" name="name" placeholder="Петр" required>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Фамилия*:</span>
-                  <input class="text__input" type="text" name="surname" placeholder="Пустота">
+                  <input class="text__input" type="text" name="surname" placeholder="Пустота" required>
                 </label>
               </li>
               <li class="feedback-form__item">
@@ -85,20 +88,20 @@
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Контактный телефон*:</span>
-                  <input class="text__input" type="text" name="phone" placeholder="Введите телефон">
+                  <input class="text__input" type="text" name="phone" placeholder="Введите телефон" required>
                   <span class="text__icon text__icon--phone"></span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Электронная почта*:</span>
-                  <input class="text__input" type="text" name="e-mail" placeholder="Ваш email">
+                  <input class="text__input" type="text" name="e-mail" placeholder="Ваш email" required>
                   <span class="text__icon text__icon--email"></span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group">
+          <fieldset class="feedback-form__group feedback-form__group--wide">
             <p class="feedback-form__title">Ваше общее впечатление:</p>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -124,7 +127,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group">
+          <fieldset class="feedback-form__group feedback-form__group--wide">
             <p class="feedback-form__title">Посещенные достопримечательности:</p>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -134,7 +137,7 @@
                   <span class="checkbox__label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="feedback-form__item">
+              <li class="feedback-form__item feedback-form__group--wide">
                 <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="mountain" value="mountain" checked>
                   <span class="checkbox__icon"></span>
@@ -157,11 +160,11 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group">
+          <fieldset class="feedback-form__group feedback-form__group--wide">
             <p class="feedback-form__title">Опишите свои эмоции:</p>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <textarea class="textarea" name="textarea" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги" autofocus>
+                <textarea class="textarea" name="textarea" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги">
                 </textarea>
               </li>
             </ul>
