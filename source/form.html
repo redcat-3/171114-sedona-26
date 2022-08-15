@@ -59,7 +59,7 @@
       <section class="form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback-form__group">
+          <fieldset class="feedback-form__group feedback-form__group--column-left">
             <p class="feedback-form__title">Представьтесь</p>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -82,7 +82,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group">
+          <fieldset class="feedback-form__group feedback-form__group--column-right">
             <p class="feedback-form__title">Контактная информация:</p>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -137,7 +137,7 @@
                   <span class="checkbox__label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="feedback-form__item feedback-form__group--wide">
+              <li class="feedback-form__item">
                 <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="mountain" value="mountain" checked>
                   <span class="checkbox__icon"></span>
@@ -163,8 +163,8 @@
           <fieldset class="feedback-form__group feedback-form__group--wide">
             <p class="feedback-form__title">Опишите свои эмоции:</p>
             <ul class="feedback-form__list">
-              <li class="feedback-form__item">
-                <textarea class="textarea" name="textarea" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги">
+              <li class="feedback-form__item feedback-form__item--textarea">
+                <textarea class="textarea" name="textarea" cols="20" rows="5" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги" wrap="soft">
                 </textarea>
               </li>
             </ul>
@@ -221,5 +221,6 @@
       <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="popup-failure__button" type="button" aria-label="ОК">OK</button>
     </article>
+    <script src="js/script.js"></script>
   </body>
 </html>

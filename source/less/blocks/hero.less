@@ -1,15 +1,16 @@
 .hero {
   &--index {
     background-position-y: bottom, 100%;
+    min-height: 389px;
   }
   min-height: 158px;
   background-color: #ddebf4;
   background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
     url("../img/back-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-size: auto, auto;
   background-position-x: 50%, center;
-  background-position-y: bottom, 100%;
+  background-position-y: bottom, bottom;
 }
 
 .hero__image {
@@ -22,12 +23,14 @@
   margin-top: 60px;
 }
 
-/*
 @media (min-width: @tablet-width) {
   .hero {
-    background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
-      url("../img/back-decktop.jpg");
-    min-height: 158px;
+    &--index {
+      min-height: 518px;
+    }
+    min-height: 302px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1200' height='57' viewBox='0 0 1200 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z' fill='white'/%3E%3Cpath d='M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+      url("../img/back-desktop.jpg");
+    background-position-y: bottom, bottom;
   }
 }
-*/
