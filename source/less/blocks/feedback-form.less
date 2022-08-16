@@ -58,7 +58,7 @@
 @media (min-width: @tablet-width) {
   .feedback-form__title {
     display: block;
-    max-width: 400px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -66,9 +66,9 @@
   .feedback-form__group--wide .feedback-form__title::before {
     content: "";
     position: absolute;
-    top: 13px;
-    left: calc(-50% - 40px);
-    width: calc(100% - 200px);
+    top: 25%;
+    left: calc(-50% - 50px);
+    width: calc(50% + 25px);
     height: 1px;
     border-top: 1px solid #e5e5e5;
   }
@@ -76,11 +76,23 @@
   .feedback-form__group--wide .feedback-form__title::after {
     content: "";
     position: absolute;
-    top: 13px;
-    right: calc(-50% - 40px);
-    width: calc(100% - 200px);
+    top: 30%;
+    right: calc(-50% - 50px);
+    width: calc(50% + 25px);
     height: 1px;
     border-top: 1px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__group--wide .feedback-form__title::before {
+    left: calc(-100% - 110px);
+    width: calc(100% + 50px);
+  }
+
+  .feedback-form__group--wide .feedback-form__title::after {
+    right: calc(-100% - 110px);
+    width: calc(100% + 50px);
   }
 }
 
@@ -155,16 +167,17 @@ ul.feedback-form__list {
 
 @media (min-width: @tablet-width) {
   .feedback-form__submit {
+    width: 648px;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
 .feedback-form__submit--button {
-  width: 280px;
+  width: 100%;
   min-height: 58px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   padding: 0;
   border: none;
   background: #81b3d2;
@@ -176,9 +189,16 @@ ul.feedback-form__list {
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .feedback-form__submit--button {
+    width: 324px;
+    margin: 0;
+  }
+}
+
 .feedback-form__footnote {
   display: block;
-  width: 200px;
+  width: auto;
   margin: 0;
   padding: 0;
   padding-right: 0;
@@ -188,6 +208,7 @@ ul.feedback-form__list {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
+  text-align: right;
 }
 
 @media (min-width: @tablet-width) {
