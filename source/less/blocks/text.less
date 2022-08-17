@@ -1,8 +1,10 @@
 .text {
+  width: 100%;
   margin: 0;
 }
 
 .text__label {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -10,20 +12,28 @@
   text-transform: uppercase;
   color: #333333;
   padding-left: 16px;
+  padding-top: 16px;
 }
 
 .text__input {
+  display: block;
   position: relative;
-  min-width: 280px;
+  width: 100%;
   min-height: 24px;
   border: none;
   background: #f2f2f2;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   padding: 16px;
-  margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .text {
+    max-width: 430px;
+  }
 }
 
 .text__icon {
@@ -40,8 +50,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  right: 40px;
-  top: 22px;
+  right: 0;
+  top: 38px;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
 }
