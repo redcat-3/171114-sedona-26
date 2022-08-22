@@ -1,32 +1,41 @@
 .card {
-  &:last-child {
-    border-bottom: 1px solid  #e5e5e5;
-  }
-  border-top: 1px solid  #e5e5e5;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-@media (min-width: @tablet-width) {
-  .card {
-    &:last-child {
-      border: none;
-    }
-    border: none;
-    padding: 0;
-  }
-
-  .card:first-child {
-    grid-column: span 2;
-  }
-}
-
-.card figure {
+  position: relative;
   padding: 0;
   margin: 0;
 }
 
-.card__caption {
+@media (min-width: @tablet-width) {
+  .card {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.card__image {
+  object-fit: cover;
+}
+
+@media (min-width: @desktop-width) {
+  .card__image {
+    height: 267px;
+  }
+}
+
+.card__title-wrapper {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .card__title-wrapper {
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+}
+
+.card__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -34,8 +43,15 @@
   align-items: center;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 10px;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .card__caption {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card__author {
@@ -43,9 +59,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-transform: none;
   color: #333333;
   padding: 0;
-  padding-bottom: 15px;
   margin: 0;
 }
 
@@ -53,6 +69,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .card__likes-wrapper {
+    padding-right: 20px;
+    margin: auto 0;
+  }
 }
 
 .card__likes {
@@ -80,4 +103,23 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: @desktop-width) {
+  .card__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .card__author,
+  .card__likes-number,
+  .card__title {
+    color: #ffffff;
+  }
+
+  .card__likes {
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='21' viewBox='0 0 23 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='1' d='M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
 }
