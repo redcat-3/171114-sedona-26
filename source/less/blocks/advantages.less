@@ -64,10 +64,8 @@
 .advantages__title {
   &::after {
     counter-increment: item;
-    content: "— " counter(item) " —";
-    position: absolute;
-    top: 40%;
-    left: 40%;
+    content: "— №" counter(item) " —";
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -75,12 +73,11 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    padding-top: 10px;
   }
 
   &--post {
     &::after {
-      counter-increment: item;
-      content: "— " counter(item) " —";
       color: #000000;
     }
     color: #000000;
@@ -99,24 +96,6 @@
   color: #ffffff;
 }
 
-.advantages__number {
-  &--post {
-    color: #333333;
-    padding-top: 13px;
-  }
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 0;
-  color: #ffffff;
-}
-
 .advantages__description {
   &--post {
     color: #333333;
@@ -129,7 +108,6 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,12 +173,20 @@
 
 @media (min-width: @tablet-width) {
   .advantages__picture {
+    &--swap {
+      order: -1;
+    }
+
     height: 256px;
     width: calc(100% - 256px);
   }
 
   .advantages__post {
     width: 256px;
+    height: 256px;
+  }
+
+  .advantages__image {
     height: 256px;
   }
 }
