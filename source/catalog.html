@@ -144,14 +144,19 @@
         <p class="presentation__description">
           Смотрите видеопрезентацию и скорее за билетами, пока они<br/>не подорожали в очередной раз!
         </p>
-        <div class="video" >
+        <div class="video video--enabled" >
           <a class="video__link" href="https://www.youtube.com/watch?v=MB_iFDDNtrw">
             <picture >
-              <source src="uxtesting.mp4" type="video/mp4">
-              <img src="img/video-mobile.jpg" width="280" height="177">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
+              <img class="video__media" src="img/video-mobile.jpg" width="280" height="177" alt="Седона, штат Аризона, - живописный город в пустыне, окруженный крутыми каньонами и холмами из красных скал.">
             </picture>
           </a>
-          <button class="video__button" type="button" aria-label="Запустить видео"></button>
+          <button class="video__button" type="button" aria-label="Запустить видео">
+            <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  class="video__button-icon" d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" opacity="0.7"/>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -184,5 +189,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
   </body>
 </html>
