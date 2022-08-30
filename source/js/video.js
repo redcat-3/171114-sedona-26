@@ -17,7 +17,8 @@ function createIframe() {
   let iframe = document.createElement('iframe');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', 'https://www.youtube.com/watch?v=MB_iFDDNtrw');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/MB_iFDDNtrw');
   iframe.classlist.add('video__media');
   return iframe;
 }
