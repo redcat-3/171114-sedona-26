@@ -1,4 +1,4 @@
-let video = document.querySelectorAll('.video');
+let video = document.querySelector('.video');
 
 function setupVideo(video) {
   let link = video.querySelector('.video__link');
