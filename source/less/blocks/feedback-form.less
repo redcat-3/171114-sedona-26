@@ -44,34 +44,29 @@
 }
 
 .feedback-form__title {
+  &::after {
+    content: ":";
+  }
   float: left;
   display: inline;
+  width: 100%;
+  height: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 20px;
-  margin: 0;
+  padding-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
-  .feedback-form__title {
-    display: block;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .feedback-form__group--wide .feedback-form__title::before {
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: calc(-50% - 50px);
-    width: calc(50% + 25px);
-    height: 1px;
-    border-top: 1px solid #e5e5e5;
+  .feedback-form__group--wide .feedback-form__title {
+    width: 100%;
+    background-image: linear-gradient(#dbdbdb, #dbdbdb), linear-gradient(#dbdbdb, #dbdbdb);
+    background-size: calc(50% - 150px) 1px;
+    background-repeat: no-repeat;
+    background-position: left center, right center;
   }
 
   .feedback-form__group--wide .feedback-form__title::after {
@@ -98,7 +93,10 @@
 }
 
 ul.feedback-form__list {
-  margin: 0;
+  &--checkbox {
+    margin-top: 100px;
+  }
+  margin-top: 50px;
 }
 
 .feedback-form__list {
@@ -107,7 +105,6 @@ ul.feedback-form__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
 }
 
 @media (min-width: @tablet-width) {
