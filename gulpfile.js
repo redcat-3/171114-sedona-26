@@ -7,7 +7,8 @@ import browser from 'browser-sync';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
-import terser from 'terser';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
@@ -33,12 +34,33 @@ const html = () => {
 }
 
 // Scripts
-export const scripts = () => {
+
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
 }
 
+// Images
+
+export const optimazeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'));
+}
+
+export const copyImages = async () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/img'));
+}
+
+// Webp
+
+export const webp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  pipe()
+  pipe(gulp.dest('build/img'))
+}
 
 // Server
 
