@@ -49,4 +49,19 @@
 .contact-form__map {
   margin-left: auto;
   margin-right: auto;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-form__map {
+    background-image: url("../img/map-tablet.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-form__map {
+    background-image: url("../img/map-desktop.jpg");
+  }
 }
