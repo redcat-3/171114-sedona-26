@@ -10,12 +10,16 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/js/*.js" as="script">
+    <link rel="preload" href="/img/back-desktop.jpg" as="image">
+    <link rel="preload" href="/fonts/psans-narrow.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page__header header">
       <nav class="header-nav">
-        <button class="header-nav__toggle header-nav__toggle--burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
+          <span></span>
         </button>
         <div class="header-nav__wrapper">
           <ul class="header-nav__list">
@@ -189,7 +193,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://t.me/htmlacademy" aria-label="Мы в Ютубе">
+              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Мы в Ютубе">
                 <svg width="48" height="48">
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
