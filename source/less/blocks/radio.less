@@ -49,6 +49,11 @@
   border-radius: 50%;
 }
 
+.radio__input:disabled + .radio__icon::after {
+  display: block;
+  opacity: 0.3;
+}
+
 .radio__input:focus + .radio__icon {
   outline: auto;
 }

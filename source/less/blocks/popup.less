@@ -5,7 +5,7 @@
   background-color: #ffffff;
 }
 
-.popup__failure {
+.popup-failure {
   &--show {
     display: block;
     animation: bounce 0.6s;
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .popup__failure {
+  .popup-failure {
     width: 400px;
     min-height: 347px;
     top: calc(50% - 173px);
@@ -32,7 +32,7 @@
   }
 }
 
-.popup__add {
+.popup-add {
   &--show {
     display: block;
     animation: bounce 0.6s;
@@ -43,13 +43,13 @@
   top: calc(50% - 191px);
   left: calc(50% - 160px);
   z-index: 30;
-  min-height: 383px;
+  min-height: 323px;
   padding: 0;
   background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
-  .popup__add {
+  .popup-add {
     width: 640px;
     min-height: 347px;
     top: calc(50% - 173px);
@@ -59,11 +59,18 @@
 
 .popup__wrapper {
   width: 100%;
+  min-height: 226px;
   padding-top: 43px;
   padding-left: 37px;
   padding-right: 39px;
   padding-bottom: 20px;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .popup__wrapper {
+    min-height: 200px;
+  }
 }
 
 .popup__title {
@@ -89,7 +96,7 @@
   margin: 0;
 }
 
-.popup__failure--button {
+.popup-failure__button {
   min-width: 180px;
   min-height: 58px;
   background-color: #81b3d2;
@@ -101,10 +108,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 48px;
+  margin: 28px 48px;
 }
 
-.popup__add--button {
+.popup-add__button {
   min-width: 280px;
   min-height: 58px;
   background-color: #81b3d2;
@@ -117,4 +124,37 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 20px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .popup__title {
+    &--failure {
+      width: 220px;
+    }
+
+    &--add {
+      width: 440px;
+    }
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+
+  .popup__message {
+    &--failure {
+      width: 220px;
+    }
+
+    &--add {
+      width: 440px;
+    }
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .popup-failure__button,
+  .popup-add__button {
+    display: block;
+    margin: 40px auto 0 auto;
+  }
 }
