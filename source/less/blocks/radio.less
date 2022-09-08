@@ -4,6 +4,7 @@
   padding: 20px;
   margin-bottom: 18px;
   cursor: pointer;
+  user-select: none;
 }
 
 .radio__input {
@@ -30,6 +31,14 @@
     border-radius: 50%;
     transition: 0.3s background-color;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background: #e5e5e5;
+  }
   display: block;
   position: absolute;
   top: 0;
@@ -38,6 +47,11 @@
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 50%;
+}
+
+.radio__input:disabled + .radio__icon::after {
+  display: block;
+  opacity: 0.3;
 }
 
 .radio__input:focus + .radio__icon {

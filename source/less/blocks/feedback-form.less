@@ -11,8 +11,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .feedback-form {
+    width: 960px;
+  }
+}
+
 .feedback-form__group {
-  width: 100%;
   border: none;
   margin: 0;
   padding: 0;
@@ -62,11 +67,11 @@
 
 @media (min-width: @tablet-width) {
   .feedback-form__group--wide .feedback-form__title {
-    width: 100%;
     background-image: linear-gradient(#dbdbdb, #dbdbdb), linear-gradient(#dbdbdb, #dbdbdb);
     background-size: calc(50% - 150px) 1px;
     background-repeat: no-repeat;
     background-position: left center, right center;
+    max-width: 960px;
   }
 
   .feedback-form__group--wide .feedback-form__title::after {
@@ -81,6 +86,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feedback-form__group--wide {
+    max-width: 960px;
+  }
+
   .feedback-form__group--wide .feedback-form__title::before {
     left: calc(-100% - 110px);
     width: calc(100% + 50px);
@@ -89,6 +98,17 @@
   .feedback-form__group--wide .feedback-form__title::after {
     right: calc(-100% - 110px);
     width: calc(100% + 50px);
+  }
+
+  .feedback-form__group--column-left {
+    padding-right: 60px;
+    width: 100%;
+  }
+
+  .feedback-form__group--column-right {
+    margin-left: 60px;
+    padding-right: 60px;
+    width: 100%;
   }
 }
 
@@ -123,6 +143,10 @@ ul.feedback-form__list {
   .feedback-form__group--wide .feedback-form__list {
     flex-wrap: nowrap;
   }
+
+  .feedback-form__list--checkbox {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -142,7 +166,6 @@ ul.feedback-form__list {
     margin-right: auto;
   }
 }
-
 
 .feedback-form__item {
   &--textarea {
@@ -178,7 +201,7 @@ ul.feedback-form__list {
   }
 }
 
-.feedback-form__submit--button {
+.feedback-form__submit-button {
   width: 100%;
   min-height: 58px;
   margin: 0 auto;
@@ -186,7 +209,7 @@ ul.feedback-form__list {
 }
 
 @media (min-width: @tablet-width) {
-  .feedback-form__submit--button {
+  .feedback-form__submit-button {
     width: 324px;
     margin: 0;
   }

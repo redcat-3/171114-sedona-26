@@ -3,17 +3,24 @@
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
+  background: #ffffff;
 }
 
 .page__body {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
+  background: #ffffff;
 }
 
 @media (min-width: @desktop-width) {
+  .page {
+    background: #e7e5e5;
+  }
+
   .page__body {
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }

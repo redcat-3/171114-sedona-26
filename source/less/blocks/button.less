@@ -1,4 +1,16 @@
 .button {
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
   background: #81b3d2;
   font-family: inherit;
   font-style: normal;
@@ -9,4 +21,8 @@
   text-transform: uppercase;
   border: none;
   color: #ffffff;
+}
+
+.button:active a {
+  opacity: 0.3;
 }
