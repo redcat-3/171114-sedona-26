@@ -1,23 +1,40 @@
 .hero {
-  &--index {
-    background-position-y: bottom, 100%;
-    min-height: 389px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100.1%;
+    height: 27px;
+    background-color: #ffffff;
+    clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
   }
+
+  &--index {
+    background-position-y: bottom;
+    min-height: 389px;
+    background-size: auto 100%;
+  }
+
+  &--disablejs {
+    margin-top: 150px;
+  }
+  position: relative;
   display: flex;
   justify-content: center;
   min-height: 159px;
   background-color: #ddebf4;
-  background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
-    url("../img/back-mobile.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
-  background-position-x: 50%, center;
-  background-position-y: bottom, bottom;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position-x: center;
+  background-position-y: bottom;
 }
 
 @media (min-resolution: 2dppx) {
-  background-image: url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_29492_891' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='768' height='57'%3E%3Crect width='768' height='57' fill='%23C4C4C4'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_29492_891)'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"),
-    url("../img/back-desktop.jpg");
+  .hero {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 }
 
 .hero__image {
@@ -30,13 +47,27 @@
 
 @media (min-width: @tablet-width) {
   .hero {
+    &::after {
+      height: 57px;
+      clip-path: polygon(0 100%, 0 0, 21.2% 42%, 21.2% 0, 50% 97%, 78.8% 0, 78.8% 42%, 100% 0, 100% 100%);
+    }
+
     &--index {
       min-height: 520px;
     }
+
+    &--disablejs {
+      margin-top: 0;
+    }
     min-height: 302px;
-    background-image: url("data:image/svg+xml,%3Csvg width='1200' height='57' viewBox='0 0 1200 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z' fill='white'/%3E%3Cpath d='M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
-      url("../img/back-desktop.jpg");
-    background-position-y: bottom, bottom;
+    background-image: url("../img/back-desktop.jpg");
+    background-position-y: bottom;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 
   .hero__image {

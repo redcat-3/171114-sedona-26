@@ -13,8 +13,11 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" width="185" height="96" alt="Седона">
+      </a>
+      <nav class="header-nav header-nav--disablejs">
+        <button class="header-nav__toggle header-nav__toggle--disablejs" type="button" aria-label="Открыть меню">
           <span></span>
         </button>
         <div class="header-nav__wrapper">
@@ -42,22 +45,19 @@
           </ul>
         </div>
       </nav>
-      <a class="header__logo" href="index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Седона">
-      </a>
     </header>
-    <main class="page-main">
-      <section class="hero">
+    <main class="page__main">
+      <section class="hero hero--disablejs">
         <h1 class="visually-hidden">Седона</h1>
         <img class="hero__image" src="img/sedona.svg" width="229" height="39" alt="Sedona">
       </section>
-      <article class="slogan">
+      <div class="slogan">
         <h2 class="visually-hidden">Ваше мнение очень важно для нас</h2>
         <h3 class="slogan__title">Оставьте свой отзыв</h3>
         <p class="slogan__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них,&nbsp;<br/>а также о посещенных вами достопримечательностях
         </p>
-      </article>
+      </div>
       <section class="form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -195,7 +195,9 @@
             </ul>
           </fieldset>
           <div class="feedback-form__submit">
-            <button class="button feedback-form__submit--button" type="submit">Отправить отзыв</button>
+            <button class="button feedback-form__submit--button" type="submit" aria-label="Отправить отзыв">
+              Отправить отзыв
+            </button>
             <p class="feedback-form__footnote">
               * — обязательные поля
             </p>

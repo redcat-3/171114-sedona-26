@@ -1,9 +1,14 @@
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   width: 100%;
   min-height: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 }
 
 .header__logo {

@@ -1,4 +1,9 @@
 .header-nav {
+  &--disablejs {
+    position: relative;
+    margin-top: 98px;
+    width: 100%;
+  }
   position: relative;
   min-width: 320px;
   min-height: 56px;
@@ -6,6 +11,10 @@
 }
 
 .header-nav__toggle {
+  &--disablejs {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -102,7 +111,6 @@
     mix-blend-mode: normal;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
-
   list-style-type: none;
   text-align: center;
   padding: 0;
@@ -148,6 +156,9 @@
 
 @media (min-width: @tablet-width) {
   .header-nav {
+    &--disablejs {
+      margin-top: 0;
+    }
     display: block;
     min-width: 640px;
   }

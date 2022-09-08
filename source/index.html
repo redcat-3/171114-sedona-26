@@ -17,8 +17,8 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
+      <nav class="header-nav header-nav--disablejs">
+        <button class="header-nav__toggle header-nav__toggle--disablejs" type="button" aria-label="Открыть меню">
           <span></span>
         </button>
         <div class="header-nav__wrapper">
@@ -50,133 +50,131 @@
         <img src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
     </header>
-    <main class="page-main main-container">
+    <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в городок Седона!</h1>
-      <section class="hero hero--index">
+      <div class="hero hero--index hero--disablejs">
         <picture>
           <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350">
           <img class="hero__image hero__image--index" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в городок Седона!">
         </picture>
-      </section>
-      <article class="slogan">
+      </div>
+      <div class="slogan slogan--index">
         <h3 class="slogan__title slogan__title--index">Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!</h3>
-        <p class="slogan__description slogan__description--index">
+        <p class="slogan__description">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
-      </article>
+      </div>
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ol class="advantages__list">
-            <li class="advantages__item advantage">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ol class="advantages__list">
+          <li class="advantages__item advantage">
+            <figure class="advantages__picture">
               <figcaption class="advantages__description">
-                <div class="advantages__post">
-                  <h3 class="advantages__title">Настоящий городок</h3>
-                  <p class="advantages__number">
-                    Седона не аттракцион для туристов, там течет своя жизнь
-                  </p>
-                </div>
-                <figure class="advantages__picture">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x" width="100%" height="auto">
-                    <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x" width="100%" height="auto">
-                    <img class="advantages__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320px" height="260" alt="Фото города Седона">
-                  </picture>
-                </figure>
+                <h3 class="advantages__title">Настоящий городок</h3>
+                <p class="advantages__text">
+                  Седона не аттракцион для туристов, там течет своя жизнь
+                </p>
               </figcaption>
-              <ul class="advantage__list">
-                <li class="advantage__item">
-                  <svg class="advantage__item-house" width="40" height="40">
-                    <use xlink:href="img/sprite.svg#house"></use>
-                  </svg>
-                  <h4 class="advantage__title">Жилье</h4>
-                  <p class="advantage__description">
-                    Рекомендуем пожить в настоящем мотеле, все как в кино!
-                  </p>
-                </li>
-                <li class="advantage__item">
-                  <svg class="advantage__item-burger" width="40" height="40">
-                    <use xlink:href="img/sprite.svg#burger"></use>
-                  </svg>
-                  <h4 class="advantage__title">Еда</h4>
-                  <p class="advantage__description">
-                    Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                  </p>
-                </li>
-                <li class="advantage__item">
-                  <svg class="advantage__item-gift" width="32" height="38">
-                    <use xlink:href="img/sprite.svg#gift"></use>
-                  </svg>
-                  <h4 class="advantage__title">Сувениры</h4>
-                  <p class="advantage__description">
-                    Не только китайского, но и местного производства!
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="advantages__item">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
+                </picture>
+              </div>
+            </figure>
+            <ul class="advantage__list">
+              <li class="advantage__item">
+                <svg class="advantage__item-house" width="40" height="40">
+                  <use xlink:href="img/sprite.svg#house"></use>
+                </svg>
+                <h4 class="advantage__title">Жилье</h4>
+                <p class="advantage__text">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="advantage__item">
+                <svg class="advantage__item-burger" width="40" height="40">
+                  <use xlink:href="img/sprite.svg#burger"></use>
+                </svg>
+                <h4 class="advantage__title">Еда</h4>
+                <p class="advantage__text">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="advantage__item">
+                <svg class="advantage__item-gift" width="32" height="38">
+                  <use xlink:href="img/sprite.svg#gift"></use>
+                </svg>
+                <h4 class="advantage__title">Сувениры</h4>
+                <p class="advantage__text">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item">
+            <figure class="advantages__picture">
               <figcaption class="advantages__description">
-                <div class="advantages__post">
-                  <h3 class="advantages__title">Там есть мост дьявола</h3>
-                  <p class="advantages__number">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
-                  </p>
-                </div>
-                <figure class="advantages__picture advantages__picture--swap">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" width="100%" height="auto">
-                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" width="100%" height="auto">
-                    <img class="advantages__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320px" height="260" alt="Фото мост дьявола">
-                  </picture>
-                </figure>
+                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <p class="advantages__text">
+                  Да, по нему можно пройти! Если вы осмелитесь, конечно
+                </p>
               </figcaption>
-            </li>
-            <li class="advantages__item advantages__item--post">
-              <div class="advantages__description advantages__description--post">
-                <h3 class="advantages__title advantages__title--post">Небольшая площадь</h3>
-                <p>
-                  Все интересные места находятся очень близко
-                </p>
+              <div class="advantages__image-wrapper advantages__image-wrapper--swap">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото мост дьявола">
+                </picture>
               </div>
-            </li>
-            <li class="advantages__item advantages__item--post">
-              <div class="advantages__description advantages__description--post">
-                <h3 class="advantages__title advantages__title--post">Красивая дорога</h3>
-                <p>
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--post">
-              <div class="advantages__description advantages__description--post">
-                <h3 class="advantages__title advantages__title--post">Мало туристов</h3>
-                <p>
-                  Большинство едет в гранд каньон и толпится там
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
+            </figure>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__description advantages__description--post">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <p class="advantages__text advantages__text--post">
+                Все интересные места находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__description advantages__description--post">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <p class="advantages__text advantages__text--post">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__description advantages__description--post">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <p class="advantages__text advantages__text--post">
+                Большинство едет в гранд каньон и толпится там
+              </p>
+            </div>
+          </li>
+        </ol>
       </section>
       <section class="contact-form">
         <h2 class="visually-hidden">Свяжитесь с нами</h2>
         <h3 class="contact-form__title">Заинтересовались?</h3>
-        <p class="contact-form__description">
+        <p class="contact-form__text">
           Укажите предполагаемые даты поездки,&nbsp;<br/> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button contact-form__button">
-          <a href="#">
-            Найти гостиницу
-          </a>
-        </button>
+        <form action="page/new.html" target="_blank">
+          <button class="button contact-form__button" aria-label="Поиск гостиницы">
+              Найти гостиницу
+          </button>
+        </form>
         <iframe class="contact-form__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.27059545038!2d-111.9304286915565!3d34.85444438069049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660711570438!5m2!1sru!2sru"
-        width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </section>
     </main>
