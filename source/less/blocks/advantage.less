@@ -4,7 +4,6 @@
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
-  padding-bottom: 30px;
   margin: 0;
   background-color: #ffffff;
 }
@@ -12,11 +11,15 @@
 @media (min-width: @tablet-width) {
   .advantage__list {
     flex-direction: row;
+    flex-wrap: wrap;
     padding-bottom: 0;
   }
 }
 
 .advantage__item {
+  &--gift {
+    min-height: 137px;
+  }
   position: relative;
   min-height: 140px;
   background-color: #ffffff;
@@ -25,7 +28,7 @@
 
 @media (min-width: @tablet-width) {
   .advantage__item {
-    width: 100%;
+    width: 33%;
     min-height: 330px;
   }
 }
@@ -33,12 +36,12 @@
 .advantage__item-icon {
   position: absolute;
   top: 23px;
-  left: 18px;
+  left: 16px;
 }
 
 .advantage__title {
-  padding-top: 33px;
-  padding-left: 48px;
+  padding-top: 32px;
+  padding-left: 47px;
   padding-right: 18px;
   margin: 0;
   font-style: normal;
@@ -50,14 +53,48 @@
 }
 
 .advantage__text {
-  padding-left: 48px;
+  padding-left: 47px;
   padding-right: 18px;
+  padding-top: 15px;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+}
+
+.advantage__item--food .advantage__title {
+  padding-top: 27px;
+  padding-left: 51px;
+}
+
+.advantage__item--food .advantage__item-icon {
+  top: 18px;
+  left: 18px;
+}
+
+.advantage__item--food .advantage__text {
+  padding-top: 16px;
+  padding-left: 51px;
+  padding-right: 0;
+}
+
+.advantage__item--gift .advantage__title {
+  padding-top: 0;
+  padding-left: 43px;
+}
+
+.advantage__item--gift .advantage__item-icon {
+  top: -7px;
+  left: 22px;
+}
+
+.advantage__item--gift .advantage__text {
+  padding-top: 16px;
+  padding-left: 43px;
+  padding-right: 0;
 }
 
 @media (min-width: @tablet-width) {

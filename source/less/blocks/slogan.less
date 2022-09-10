@@ -1,7 +1,7 @@
 .slogan {
   width: 100%;
   min-height: 245px;
-  padding-top: 35px;
+  padding-top: 34px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -10,7 +10,9 @@
 
 .slogan__title {
   &--index {
+    max-width: 260px;
     padding-bottom: 20px;
+    margin: 0 auto;
   }
   font-style: normal;
   font-weight: 700;
@@ -31,7 +33,7 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
@@ -42,7 +44,7 @@
     bottom: -1px;
     left: -0.5%;
     width: 101%;
-    height: 27px;
+    height: 20px;
     background-color: #81b3d2;
     clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
   }
@@ -59,6 +61,21 @@
   }
 
   .slogan {
-    min-height: 217px;
+    min-height: 204px;
+    padding-bottom: 5px;
+  }
+
+  .slogan__title {
+    &--index {
+      max-width: 520px;
+      padding-top: 12px;
+    }
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .slogan__description {
+    padding-top: 10px;
   }
 }

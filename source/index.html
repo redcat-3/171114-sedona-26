@@ -10,10 +10,9 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font">
     <link rel="preload" href="/css/style.min.css" as="style">
-    <link rel="preload" href="/js/*.js" as="script">
-    <link rel="preload" href="/img/back-desktop.jpg" as="image">
-    <link rel="preload" href="/fonts/psans-narrow.woff2" as="font">
+    <link rel="preload" href="/js/navigation.js" as="script">
   </head>
   <body class="page__body">
     <header class="page__header header">
@@ -59,7 +58,7 @@
         </picture>
       </div>
       <div class="slogan slogan--index">
-        <h3 class="slogan__title slogan__title--index">Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!</h3>
+        <h3 class="slogan__title slogan__title--index">Седона — небольшой городок в Аризоне,&nbsp<br/>заслуживающий большего!</h3>
         <p class="slogan__description">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
@@ -88,7 +87,7 @@
             </figure>
             <ul class="advantage__list">
               <li class="advantage__item">
-                <svg class="advantage__item-icon" width="40" height="40">
+                <svg class="advantage__item-icon" width="42" height="42">
                   <use xlink:href="img/sprite.svg#house"></use>
                 </svg>
                 <h4 class="advantage__title">Жилье</h4>
@@ -96,7 +95,7 @@
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="advantage__item">
+              <li class="advantage__item advantage__item--food">
                 <svg class="advantage__item-icon" width="40" height="40">
                   <use xlink:href="img/sprite.svg#burger"></use>
                 </svg>
@@ -105,7 +104,7 @@
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
-              <li class="advantage__item">
+              <li class="advantage__item advantage__item--gift">
                 <svg class="advantage__item-icon" width="32" height="38">
                   <use xlink:href="img/sprite.svg#gift"></use>
                 </svg>
@@ -118,7 +117,7 @@
           </li>
           <li class="advantages__item">
             <figure class="advantages__picture">
-              <figcaption class="advantages__description">
+              <figcaption class="advantages__description advantages__description--bridge">
                 <h3 class="advantages__title">Там есть мост дьявола</h3>
                 <p class="advantages__text">
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -136,27 +135,27 @@
               </div>
             </figure>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item">
             <div class="advantages__description advantages__description--post">
-              <h3 class="advantages__title">Небольшая площадь</h3>
+              <h3 class="advantages__title advantages__title--post advantages__title--first">Небольшая площадь</h3>
               <p class="advantages__text advantages__text--post">
-                Все интересные места находятся очень близко
+                Все интересные места находятся&nbsp<br/>очень близко
               </p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages__description advantages__description--post">
-              <h3 class="advantages__title">Красивая дорога</h3>
+              <h3 class="advantages__title advantages__title--post">Красивая дорога</h3>
               <p class="advantages__text advantages__text--post">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
+                Ехать в Седону из Лас-Вегаса&nbsp<br/>совсем не скучно!
               </p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages__description advantages__description--post">
-              <h3 class="advantages__title">Мало туристов</h3>
+              <h3 class="advantages__title advantages__title--post">Мало туристов</h3>
               <p class="advantages__text advantages__text--post">
-                Большинство едет в гранд каньон и толпится там
+                Большинство едет в гранд каньон&nbsp<br/>и толпится там
               </p>
             </div>
           </li>
@@ -210,14 +209,14 @@
         </div>
         <div class="footer__copyright">
           <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано:
-            <svg width="27" height="35">
+            Разработано
+            <svg width="41" height="41">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
 
   &--index {
     background-position-y: bottom;
-    min-height: 389px;
+    min-height: 388px;
     background-size: auto 100%;
   }
 
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   min-height: 159px;
-  background-color: #ddebf4;
+  background-color: #5e83ac;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 200% auto;
@@ -48,8 +48,8 @@
 @media (min-width: @tablet-width) {
   .hero {
     &::after {
-      height: 57px;
-      clip-path: polygon(0 100%, 0 0, 21.2% 42%, 21.2% 0, 50% 97%, 78.8% 0, 78.8% 42%, 100% 0, 100% 100%);
+      height: 58px;
+      clip-path: polygon(0% 100%, 0% 33%, 4% 38%, 4% 2%, 50% 100%, 51% 100%, 96% 2%, 96% 38%, 100% 33%, 100% 100%, 0% 100%,);
     }
 
     &--index {
@@ -72,12 +72,21 @@
 
   .hero__image {
     &--index {
-      margin-top: 90px;
+      margin-top: 77px;
       height: 350px;
     }
     display: block;
     width: 458px;
     height: 78px;
     margin-top: 95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    &::after {
+      height: 57px;
+      clip-path: polygon(0 100%, 0 0, 21.2% 42%, 21.2% 0, 50% 97%, 78.8% 0, 78.8% 42%, 100% 0, 100% 100%);
+    }
   }
 }
