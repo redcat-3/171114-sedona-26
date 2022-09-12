@@ -19,23 +19,48 @@
   width: 100%;
 }
 
+@media (min-width: @tablet-width) {
+  .card__image {
+    &--wide {
+      height: 400px;
+    }
+    height: 267px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .card__image {
+    &--wide {
+      height: 400px;
+    }
     height: 267px;
   }
 }
 
 .card__title-wrapper {
-  padding-top: 10px;
-  padding-bottom: 15px;
+  &--wide {
+    padding-bottom: 15px;
+  }
+  padding-top: 15px;
+  padding-bottom: 17px;
 }
 
 @media (min-width: @tablet-width) {
   .card__title-wrapper {
     padding-top: 22px;
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__title-wrapper {
+    &--wide {
+      padding-top: 22px;
+    }
+    min-height: 80px;
+    padding-top: 25px;
   }
 }
 
@@ -62,7 +87,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   text-transform: none;
   color: #333333;
   padding: 0;
@@ -79,8 +104,10 @@
 
 @media (min-width: @tablet-width) {
   .card__likes-wrapper {
+    padding-top: 8px;
     padding-right: 20px;
     margin: auto 0;
+    gap: 10px;
   }
 }
 
@@ -97,7 +124,8 @@
   width: 23px;
   height: 21px;
   padding: 0;
-  margin-top: -3px;
+  margin-top: -6px;
+  margin-left: -6px;
   border: 0;
   border-radius: 0;
   color: #000000;
@@ -109,11 +137,13 @@
     color: #81b3d2;
   }
   display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: -2px;
 }
 
 @media (min-width: @desktop-width) {

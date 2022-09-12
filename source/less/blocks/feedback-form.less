@@ -18,14 +18,24 @@
 }
 
 .feedback-form__group {
+  &--radio {
+    padding-bottom: 14px;
+  }
+
+  &--checkbox {
+    padding-bottom: 14px;
+  }
   border: none;
   margin: 0;
   padding: 0;
   padding-top: 24px;
-  padding-bottom: 19px;
+  padding-bottom: 40px;
   border-top: 1px solid #e5e5e5;
 }
 
+.feedback-form__group--column-right {
+  padding-bottom: 34px;
+}
 
 @media (min-width: @tablet-width) {
   .feedback-form__group {
@@ -51,6 +61,10 @@
 .feedback-form__title {
   &::after {
     content: ":";
+  }
+
+  &--radio {
+    padding-bottom: 20px;
   }
   float: left;
   display: inline;
@@ -114,17 +128,22 @@
 
 ul.feedback-form__list {
   &--checkbox {
-    margin-top: 100px;
+    margin-top: 72px;
   }
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .feedback-form__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  gap: 6px;
+  padding: 0 20px;
   margin: 0;
+}
+
+.feedback-form__list .feedback-form__item--textarea {
+  height: 160px;
 }
 
 @media (min-width: @tablet-width) {
@@ -202,9 +221,9 @@ ul.feedback-form__list {
 }
 
 .feedback-form__submit-button {
-  width: 100%;
+  width: 280px;
   min-height: 58px;
-  margin: 0 auto;
+  margin: 16px 20px 0;
   padding: 0;
 }
 
@@ -219,8 +238,9 @@ ul.feedback-form__list {
   display: block;
   width: auto;
   margin: 0;
-  padding: 0;
-  padding-right: 0;
+  padding-top: 2px;
+  padding-right: 20px;
+  padding-bottom: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

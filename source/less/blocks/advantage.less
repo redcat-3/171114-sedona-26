@@ -11,6 +11,7 @@
 @media (min-width: @tablet-width) {
   .advantage__list {
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 0;
   }
@@ -29,6 +30,12 @@
   .advantage__item {
     min-width: 256px;
     min-height: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__item {
+    width: 400px;
   }
 }
 
@@ -129,5 +136,19 @@
     left: calc(50% - 34px);
     width: 64px;
     height: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__text {
+    width: 300px;
+  }
+
+  .advantage__item--food .advantage__text {
+    max-width: 300px;
+  }
+
+  .advantage__item--gift .advantage__text span {
+    display: block;
   }
 }

@@ -1,9 +1,13 @@
 .slogan {
+  &--form {
+    min-height: 195px;
+    padding-bottom: 23px;
+  }
   width: 100%;
   min-height: 245px;
   padding-top: 34px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 25px;
   background-color: #ffffff;
 }
@@ -13,6 +17,11 @@
     max-width: 260px;
     padding-bottom: 20px;
     margin: 0 auto;
+  }
+
+  &--form {
+    padding-top: 2px;
+    padding-bottom: 8px;
   }
   font-style: normal;
   font-weight: 700;
@@ -29,12 +38,18 @@
   width: 100%;
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 5px;
+}
+
+.slogan__description span {
+  display: block;
 }
 
 .slogan--index {
@@ -78,10 +93,20 @@
   .slogan__description {
     padding-top: 10px;
   }
+
+  .slogan__description span {
+    display: inline;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .slogan {
+    min-height: 206px;
+    padding-bottom: 5px;
+  }
+
   .slogan__title {
     padding-top: 24px;
+    padding-bottom: 22px;
   }
 }
