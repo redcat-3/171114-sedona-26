@@ -8,14 +8,6 @@
   padding-bottom: 36px;
 }
 
-@media (min-width: @tablet-width) {
-  .footer__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .footer__hashtag {
   font-style: normal;
   font-weight: 700;
@@ -23,4 +15,18 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    padding-top: 33px;
+    padding-right: 43px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__hashtag {
+    padding-right: 10px;
+  }
 }
