@@ -90,7 +90,7 @@
       font-weight: 700;
       font-size: 30px;
       line-height: 26px;
-      padding-top: 30px;
+      padding-top: 27px;
     }
     font-weight: 700;
     font-size: 21px;
@@ -116,12 +116,32 @@
 
 @media (min-width: @desktop-width) {
   .slogan {
+    &--index {
+      min-height: 204px;
+    }
     min-height: 206px;
     padding-bottom: 5px;
   }
 
   .slogan__title {
+    &--form {
+      padding-top: 80px;
+      padding-bottom: 18px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &--index {
+      padding-bottom: 20px;
+    }
     padding-top: 24px;
     padding-bottom: 22px;
+    font-weight: 700;
+  }
+
+  .slogan__description {
+    &--form {
+      line-height: 23px;
+    }
   }
 }

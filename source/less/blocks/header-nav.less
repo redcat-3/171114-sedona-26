@@ -24,9 +24,10 @@
   }
   position: absolute;
   display: block;
+  padding: 0;
   z-index: 300;
   top: 16px;
-  right: 24px;
+  right: 20px;
   width: 24px;
   height: 23px;
   border: none;
@@ -36,8 +37,9 @@
 .header-nav__toggle > span {
   &::after {
     content: "";
+    display: block;
     bottom: 0;
-    right: -5px;
+    right: 0;
     height: 4px;
     width: 100%;
     position: absolute;
@@ -47,8 +49,9 @@
 
   &::before {
     content: " ";
+    display: block;
     top: 0;
-    right: -5px;
+    right: 0;
     height: 4px;
     width: 100%;
     position: absolute;
@@ -57,7 +60,8 @@
   }
   display: block;
   height: 4px;
-  width: 23px;
+  width: 100%;
+  padding: 0;
   top: 21px;
   background: #81b3d2;
   text-align: center;
