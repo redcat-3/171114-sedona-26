@@ -15,6 +15,30 @@
   border: none;
 }
 
+@media (min-width: @tablet-width) {
+  .video {
+    padding-bottom: 77.2%;
+    margin-bottom: 43px;
+  }
+
+  .video__media {
+    height: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 800px;
+    height: 500px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .video__media {
+    width: 800px;
+  }
+}
+
 .video__button {
   position: absolute;
   top: 50%;

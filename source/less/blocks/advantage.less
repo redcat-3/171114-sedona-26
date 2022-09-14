@@ -4,7 +4,6 @@
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
-  padding-bottom: 30px;
   margin: 0;
   background-color: #ffffff;
 }
@@ -12,33 +11,43 @@
 @media (min-width: @tablet-width) {
   .advantage__list {
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 0;
   }
 }
 
 .advantage__item {
+  &--gift {
+    min-height: 137px;
+  }
   position: relative;
-  min-height: 140px;
   background-color: #ffffff;
   padding: 0 18px;
 }
 
 @media (min-width: @tablet-width) {
   .advantage__item {
-    width: 100%;
+    min-width: 256px;
     min-height: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__item {
+    width: 400px;
   }
 }
 
 .advantage__item-icon {
   position: absolute;
   top: 23px;
-  left: 18px;
+  left: 16px;
 }
 
 .advantage__title {
-  padding-top: 33px;
-  padding-left: 48px;
+  padding-top: 32px;
+  padding-left: 47px;
   padding-right: 18px;
   margin: 0;
   font-style: normal;
@@ -50,8 +59,10 @@
 }
 
 .advantage__text {
-  padding-left: 48px;
+  padding-left: 47px;
   padding-right: 18px;
+  padding-top: 15px;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -60,16 +71,42 @@
   color: #333333;
 }
 
+.advantage__item--food .advantage__title {
+  padding-top: 30px;
+  padding-left: 51px;
+}
+
+.advantage__item--food .advantage__item-icon {
+  top: 21px;
+  left: 18px;
+}
+
+.advantage__item--food .advantage__text {
+  padding-right: 0;
+}
+
+.advantage__item--gift .advantage__item-icon {
+  left: 22px;
+}
+
+.advantage__item--gift .advantage__text {
+  padding-right: 0;
+  padding-bottom: 53px;
+}
+
 @media (min-width: @tablet-width) {
   .advantage__item-icon {
-    top: 60px;
-    left: calc(50% - 37px);
-    width: 75px;
-    height: 75px;
+    top: 55px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
   }
 
   .advantage__title {
     margin: 158px auto 0 auto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
     text-align: center;
     padding: 0;
   }
@@ -79,5 +116,39 @@
     padding: 0;
     width: 192px;
     margin: 23px auto;
+  }
+
+  .advantage__item--food .advantage__title {
+    padding: 0;
+  }
+
+  .advantage__item--food .advantage__item-icon {
+    top: 56px;
+    left: calc(50% - 42px);
+  }
+
+  .advantage__item--food .advantage__text {
+    max-width: 155px;
+  }
+
+  .advantage__item--gift .advantage__item-icon {
+    top: 57px;
+    left: calc(50% - 34px);
+    width: 64px;
+    height: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__text {
+    width: 300px;
+  }
+
+  .advantage__item--food .advantage__text {
+    max-width: 300px;
+  }
+
+  .advantage__item--gift .advantage__text span {
+    display: block;
   }
 }

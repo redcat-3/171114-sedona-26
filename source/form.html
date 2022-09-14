@@ -51,23 +51,23 @@
         <h1 class="visually-hidden">Седона</h1>
         <img class="hero__image" src="img/sedona.svg" width="229" height="39" alt="Sedona">
       </section>
-      <div class="slogan">
+      <div class="slogan slogan--form">
         <h2 class="visually-hidden">Ваше мнение очень важно для нас</h2>
-        <h3 class="slogan__title">Оставьте свой отзыв</h3>
-        <p class="slogan__description">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них,&nbsp;<br/>а также о посещенных вами достопримечательностях
+        <h3 class="slogan__title slogan__title--form">Оставьте свой отзыв</h3>
+        <p class="slogan__description slogan__description--form">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о <span>посещенных вами достопримечательностях</span>
         </p>
       </div>
       <section class="form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback-form__group feedback-form__group--column-left">
-            <legend class="feedback-form__title">Представьтесь</legend>
+            <legend class="feedback-form__title">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Имя*:</span>
-                  <input class="text__input" type="text" name="name" placeholder="Петр" required>
+                  <input class="text__input" type="text" name="name" placeholder="Пётр" required>
                 </label>
               </li>
               <li class="feedback-form__item">
@@ -85,7 +85,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--column-right">
-            <legend class="feedback-form__title">Контактная информация</legend>
+            <legend class="feedback-form__title">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="text">
@@ -101,7 +101,7 @@
               <li class="feedback-form__item">
                 <label class="text">
                   <span class="text__label">Электронная почта*:</span>
-                  <input class="text__input" type="text" name="e-mail" placeholder="Ваш email" required>
+                  <input class="text__input" type="text" name="e-mail" placeholder="Введите e-mail" required>
                   <span class="text__icon">
                     <svg width="16" height="12">
                       <use xlink:href="img/sprite.svg#mail"></use>
@@ -111,9 +111,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--wide">
-            <legend class="feedback-form__title">Ваше общее впечатление</legend>
-            <ul class="feedback-form__list">
+          <fieldset class="feedback-form__group feedback-form__group--wide feedback-form__group--radio">
+            <legend class="feedback-form__title feedback-form__title--radio">Ваше общее впечатление:</legend>
+            <ul class="feedback-form__list feedback-form__list--radio">
               <li class="feedback-form__item">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="impress" value="+" checked>
@@ -137,8 +137,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--wide">
-            <legend class="feedback-form__title">Посещенные&nbsp;<br>достопримечательности</legend>
+          <fieldset class="feedback-form__group feedback-form__group--wide feedback-form__group--checkbox">
+            <legend class="feedback-form__title feedback-form__title--checkbox">Посещенные&nbsp;<br>достопримечательности:</legend>
             <ul class="feedback-form__list feedback-form__list--checkbox">
               <li class="feedback-form__item">
                 <label class="checkbox">
@@ -187,7 +187,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--wide">
-            <legend class="feedback-form__title">Опишите свои эмоции</legend>
+            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item feedback-form__item--textarea">
                 <textarea class="textarea" name="textarea" cols="20" rows="5" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги" wrap="soft"></textarea>
@@ -237,8 +237,8 @@
         </div>
         <div class="footer__copyright">
           <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано:
-            <svg width="27" height="35">
+            Разработано
+            <svg width="41" height="41">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
@@ -260,6 +260,6 @@
       <p class="popup__message popup__message--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button popup-failure__button" type="button" aria-label="ОК">OK</button>
     </article>
-    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

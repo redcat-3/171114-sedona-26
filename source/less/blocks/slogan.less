@@ -1,16 +1,27 @@
 .slogan {
+  &--form {
+    min-height: 195px;
+    padding-bottom: 23px;
+  }
   width: 100%;
   min-height: 245px;
-  padding-top: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 25px;
   background-color: #ffffff;
 }
 
 .slogan__title {
   &--index {
+    max-width: 260px;
     padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  &--form {
+    padding-top: 2px;
+    padding-bottom: 8px;
   }
   font-style: normal;
   font-weight: 700;
@@ -27,12 +38,18 @@
   width: 100%;
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-bottom: 5px;
+}
+
+.slogan__description span {
+  display: block;
 }
 
 .slogan--index {
@@ -42,7 +59,7 @@
     bottom: -1px;
     left: -0.5%;
     width: 101%;
-    height: 27px;
+    height: 20px;
     background-color: #81b3d2;
     clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
   }
@@ -59,6 +76,72 @@
   }
 
   .slogan {
-    min-height: 217px;
+    min-height: 204px;
+    padding-bottom: 5px;
+  }
+
+  .slogan__title {
+    &--index {
+      max-width: 520px;
+      padding-top: 12px;
+    }
+
+    &--form {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 26px;
+      padding-top: 27px;
+    }
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .slogan__description {
+    &--form {
+      width: 443px;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      padding-top: 12px;
+    }
+    padding-top: 10px;
+  }
+
+  .slogan__description span {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    &--index {
+      min-height: 204px;
+    }
+    min-height: 206px;
+    padding-bottom: 5px;
+  }
+
+  .slogan__title {
+    &--form {
+      padding-top: 80px;
+      padding-bottom: 18px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &--index {
+      padding-bottom: 20px;
+    }
+    padding-top: 24px;
+    padding-bottom: 22px;
+    font-weight: 700;
+  }
+
+  .slogan__description {
+    &--form {
+      line-height: 23px;
+    }
   }
 }
