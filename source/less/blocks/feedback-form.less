@@ -1,19 +1,24 @@
 .feedback-form {
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
   .feedback-form {
+    position: relative;
+    max-width: @tablet-width;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
+    grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr);
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback-form {
-    padding: 0 120px;
+    max-width: @desktop-width;
+    padding: 0 100px 0 120px;
+    grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
   }
 }
 
@@ -153,14 +158,14 @@
   .feedback-form__group--column-left {
     padding-top: 2px;
     padding-right: 62px;
-    width: calc(100% - 52px);
+    width: 430px;
   }
 
   .feedback-form__group--column-right {
     margin-left: 0;
     padding-top: 2px;
-    padding-left: 37px;
-    width: calc(100% - 52px);
+    padding-left: 70px;
+    width: 402px;
   }
 }
 
@@ -201,7 +206,6 @@
     }
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -216,19 +220,15 @@
     &--checkbox {
       width: 960px;
       margin-left: 45px;
-      padding-right: 88px;
+      padding-right: 60px;
       padding-bottom: 54px;
       padding-top: 0;
-      gap: 5px;
+      gap: 15px;
     }
   }
 
-  .feedback-form__group--wide .feedback-form__list--checkbox {
-    justify-content: space-between;
-  }
-
   .feedback-form__group--wide .feedback-form__list--checkbox .feedback-form__item {
-    width: 185px;
+    width: 210px;
   }
 
   .feedback-form__group--column-left .feedback-form__list {
@@ -253,6 +253,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .feedback-form__group--wide .feedback-form__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .feedback-form__list .feedback-form__item--textarea {
     display: block;
     width: 648px;
@@ -268,12 +274,6 @@
     margin-top: 0;
     margin-left: 96px;
     margin-bottom: 10px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .feedback-form__group--wide .feedback-form__item {
-    width: 280px;
   }
 }
 

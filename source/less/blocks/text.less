@@ -24,6 +24,7 @@
   &:active {
     background: #ffffff;
     border: 4px solid #e5e5e5;
+    outline: none;
   }
 
   &:disabled {
@@ -79,8 +80,12 @@
 
 .text__input:hover ~ .text__icon {
   background-color: #b3b3b3;
+  outline: none;
 }
 
 .text__input:active ~ .text__icon {
+  border-top: 1px solid #e6e6e6;
+  border-right: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
   background-color: #e6e6e6;
 }
